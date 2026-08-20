@@ -14,7 +14,14 @@ Add the shell wrapper to `~/.zshrc` or `~/.bashrc`:
 source "$(npm root -g)/worktree-tools/shell/wt.sh"
 ```
 
-For local development from this repository:
+To install from this repository without publishing (adds the `wt` binary to your PATH):
+
+```bash
+npm link
+source "$(npm root -g)/worktree-tools/shell/wt.sh"
+```
+
+Or for local development without linking:
 
 ```bash
 source ./shell/wt.sh
